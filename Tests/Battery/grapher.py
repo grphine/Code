@@ -23,20 +23,25 @@ with open('Tests\\Battery\\data\\230214-old.csv', 'r') as csv_file:
         level_1.append(float(row[7]))
         fix_1.append(int(row[6]))
 
-plt.subplot(2, 1, 1)
-plt.plot_date(timestamps_1, level_1, fmt='g.', tz='UTC', xdate=True, ydate=False, label = "Battery level")
 
-plt.xticks(rotation = 25)
-plt.xlabel('Timestamps')
-plt.ylabel('Voltage (V)')
-plt.title('Battery discharge')
-plt.grid()
-plt.legend()
+fig, (ax1, ax2) = plt.subplots(2, 1)
+fig.subplots_adjust(hspace=0.5)
 
-plt.plot(timestamps_1, fix_1, label = "GPS fix quality")
+ax1.plot_date(timestamps_1, level_1, fmt='g', lw=2, tz='UTC', xdate=True, ydate=False, label = "Battery level")
+
+# plt.xticks(rotation = 25)
+# plt.xlabel('Timestamps')
+# plt.ylabel('Voltage (V)')
+# plt.title('Battery discharge')
+# plt.grid()
+# plt.legend()
 
 
-plt.grid()
+ax1.plot(timestamps_1, fix_1, color=blue, label = "GPS fix quality")
+ax1.fill_between(timestamps_1, 0, fix_1, alpha=.3)
+
+
+# plt.grid()
 
 
 timestamps_2  = []
@@ -50,20 +55,22 @@ with open('Tests\\Battery\\data\\230214.csv', 'r') as csv_file:
         level_2.append(float(row[7]))
         fix_2.append(int(row[6]))
 
-plt.subplot(2, 1, 2)
-plt.scatter(timestamps_2, level_2, color = 'g', marker = '.',label = "Battery level")
+# plt.subplot(2, 1, 2)
+ax2.plot(timestamps_2, level_2, color = 'g', lw=2, label = "Battery level")
 
-plt.xticks(rotation = 25)
-plt.xlabel('Timestamps')
-plt.ylabel('Voltage (V)')
-plt.title('Battery charge')
-plt.grid()
-plt.legend()
+# plt.xticks(rotation = 25)
+# plt.xlabel('Timestamps')
+# plt.ylabel('Voltage (V)')
+# plt.title('Battery charge')
+# plt.grid()
+# plt.legend()
 
-plt.plot(timestamps_2, fix_2, label = "GPS fix quality")
+ax2.plot(timestamps_2, fix_2, color=blue, label = "GPS fix quality")
+ax2.fill_between(timestamps_2, 0, fix_2, alpha=.3)
 
-plt.grid()
+# plt.grid()
 
-plt.suptitle("Battery charge curves")
+# plt.suptitle("Battery charge curves")
+
 plt.show()
 
