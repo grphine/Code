@@ -13,8 +13,8 @@ def coord_rewrite(split_coord, direction):
         d = '-'
     return d + split_coord[0] + "'" + split_coord[1]
 
-with open('Tests\\Distance\\data\\230216-initial-edit.csv') as csv_file:
-    with open('Tests\\Distance\\first_test.csv', 'w+', newline='') as write_file:
+with open('Tests\\Distance\\data\\230217-edit.csv') as csv_file:
+    with open('Tests\\Distance\\second_test.csv', 'w+', newline='') as write_file:
         reader = csv.reader(csv_file)
         writer = csv.writer(write_file)
         writer.writerow(['datetime', 'latitude', 'longitude'])  #headers
