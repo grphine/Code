@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <open>1</open>
+    <visibility>1</visibility>
+    <name>17 Feb 2023 1:41:52 pm</name>
+    <description></description>
+    <atom:author>
+      <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+    </atom:author>
+    <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+    <ExtendedData>
+      <Data name="comment">
+        <value></value>
+      </Data>
+    </ExtendedData>
+    <TimeStamp>
+      <when>2023-02-17T13:41:52.853Z</when>
+    </TimeStamp>
+    <Style id="track">
+      <LineStyle>
+        <color>ffff0000</color>
+        <width>4</width>
+      </LineStyle>
+    </Style>
+    <Schema id="geotrackerTrackSchema">
+      <gx:SimpleArrayField name="speed" type="float">
+        <displayName>Speed, meters per second</displayName>
+      </gx:SimpleArrayField>
+      <gx:SimpleArrayField name="course" type="float">
+        <displayName>Course, radians</displayName>
+      </gx:SimpleArrayField>
+    </Schema>
+    <Placemark id="tour">
+      <name>17 Feb 2023 1:41:52 pm</name>
+      <description></description>
+      <atom:author>
+        <atom:name>Recorded in Geo Tracker for Android from Ilya Bogdanovich</atom:name>
+      </atom:author>
+      <atom:link href="https://play.google.com/store/apps/details?id=com.ilyabogdanovich.geotracker" />
+      <ExtendedData>
+        <Data name="comment">
+          <value></value>
+        </Data>
+        <Data name="activity">
+          <value>0</value>
+        </Data>
+      </ExtendedData>
+      <TimeSpan>
+        <begin>2023-02-17T13:41:52.853Z</begin>
+        <end>2023-02-17T13:53:12.329Z</end>
+      </TimeSpan>
+      <styleUrl>#track</styleUrl>
+      <gx:MultiTrack>
+        <altitudeMode>absolute</altitudeMode>
+        <gx:interpolate>0</gx:interpolate>
+        <gx:Track>
+          <gx:coord>-1.56132623 52.38261212 62.51</gx:coord>
+          <when>2023-02-17T13:44:48Z</when>
+          <gx:coord>-1.56123128 52.38268469 127.56</gx:coord>
+          <when>2023-02-17T13:45:10Z</when>
+          <gx:coord>-1.56129532 52.38279329 126.44</gx:coord>
+          <when>2023-02-17T13:45:14Z</when>
+          <gx:coord>-1.56138629 52.38286398 127.49</gx:coord>
+          <when>2023-02-17T13:45:20Z</when>
+          <gx:coord>-1.56153087 52.38289276 127.94</gx:coord>
+          <when>2023-02-17T13:45:31Z</when>
+          <gx:coord>-1.56166255 52.38283815 128.35</gx:coord>
+          <when>2023-02-17T13:45:43Z</when>
+          <gx:coord>-1.56181618 52.38287809 133.06</gx:coord>
+          <when>2023-02-17T13:45:49Z</when>
+          <gx:coord>-1.5619597 52.38284774 140.85</gx:coord>
+          <when>2023-02-17T13:45:53Z</when>
+          <gx:coord>-1.56209498 52.38277619 141.71</gx:coord>
+          <when>2023-02-17T13:46:04Z</when>
+          <gx:coord>-1.5622148 52.38272398 147</gx:coord>
+          <when>2023-02-17T13:46:09Z</when>
+          <gx:coord>-1.56236191 52.38274055 144.7</gx:coord>
+          <when>2023-02-17T13:46:17Z</when>
+          <gx:coord>-1.56243669 52.38283025 145.08</gx:coord>
+          <when>2023-02-17T13:46:27Z</when>
+          <gx:coord>-1.56246974 52.38291955 145.07</gx:coord>
+          <when>2023-02-17T13:46:35Z</when>
+          <gx:coord>-1.56253673 52.38300165 145.11</gx:coord>
+          <when>2023-02-17T13:46:43Z</when>
+          <gx:coord>-1.56270614 52.3830132 147.74</gx:coord>
+          <when>2023-02-17T13:46:48Z</when>
+          <gx:coord>-1.56284574 52.38306728 149.84</gx:coord>
+          <when>2023-02-17T13:46:55Z</when>
+          <gx:coord>-1.56298361 52.38311003 142.93</gx:coord>
+          <when>2023-02-17T13:47:01Z</when>
+          <gx:coord>-1.56312849 52.38314551 139.75</gx:coord>
+          <when>2023-02-17T13:47:09Z</when>
+          <gx:coord>-1.56325831 52.38308586 139.89</gx:coord>
+          <when>2023-02-17T13:47:19Z</when>
+          <gx:coord>-1.56341668 52.38308166 137.43</gx:coord>
+          <when>2023-02-17T13:47:28Z</when>
+          <gx:coord>-1.56355753 52.38311934 137.95</gx:coord>
+          <when>2023-02-17T13:47:34Z</when>
+          <gx:coord>-1.56367996 52.38317142 137.39</gx:coord>
+          <when>2023-02-17T13:47:39Z</when>
+          <gx:coord>-1.56381582 52.3832318 139.01</gx:coord>
+          <when>2023-02-17T13:47:46Z</when>
+          <gx:coord>-1.56391793 52.3832965 137.17</gx:coord>
+          <when>2023-02-17T13:47:53Z</when>
+          <gx:coord>-1.56402966 52.38335879 138.46</gx:coord>
+          <when>2023-02-17T13:48:04Z</when>
+          <gx:coord>-1.56408265 52.38344969 135.71</gx:coord>
+          <when>2023-02-17T13:48:41Z</when>
+          <gx:coord>-1.56398918 52.38352427 133.56</gx:coord>
+          <when>2023-02-17T13:48:50Z</when>
+          <gx:coord>-1.56391121 52.38360233 131.41</gx:coord>
+          <when>2023-02-17T13:48:57Z</when>
+          <gx:coord>-1.56380723 52.38367285 131.82</gx:coord>
+          <when>2023-02-17T13:49:04Z</when>
+          <gx:coord>-1.56373783 52.38376027 130.08</gx:coord>
+          <when>2023-02-17T13:49:12Z</when>
+          <gx:coord>-1.56359482 52.38379242 128.14</gx:coord>
+          <when>2023-02-17T13:49:19Z</when>
+          <gx:coord>-1.56349934 52.3838675 126.5</gx:coord>
+          <when>2023-02-17T13:49:28Z</when>
+          <gx:coord>-1.56334533 52.38388326 126.52</gx:coord>
+          <when>2023-02-17T13:49:37Z</when>
+          <gx:coord>-1.56319064 52.38388959 125.83</gx:coord>
+          <when>2023-02-17T13:49:43Z</when>
+          <gx:coord>-1.5630366 52.3838902 129.34</gx:coord>
+          <when>2023-02-17T13:49:48Z</when>
+          <gx:coord>-1.56288529 52.38386019 132.29</gx:coord>
+          <when>2023-02-17T13:49:53Z</when>
+          <gx:coord>-1.56274244 52.38382109 136.07</gx:coord>
+          <when>2023-02-17T13:49:59Z</when>
+          <gx:coord>-1.56258336 52.38378883 138.09</gx:coord>
+          <when>2023-02-17T13:50:08Z</when>
+          <gx:coord>-1.56244593 52.38374101 138.24</gx:coord>
+          <when>2023-02-17T13:50:16Z</when>
+          <gx:coord>-1.5623215 52.38367979 137.65</gx:coord>
+          <when>2023-02-17T13:50:23Z</when>
+          <gx:coord>-1.56222838 52.38360233 136.86</gx:coord>
+          <when>2023-02-17T13:50:31Z</when>
+          <gx:coord>-1.56217814 52.38351709 135.38</gx:coord>
+          <when>2023-02-17T13:50:38Z</when>
+          <gx:coord>-1.56204664 52.38346648 136.59</gx:coord>
+          <when>2023-02-17T13:50:46Z</when>
+          <gx:coord>-1.56195633 52.38338985 135.52</gx:coord>
+          <when>2023-02-17T13:50:54Z</when>
+          <gx:coord>-1.56188064 52.3833121 133.71</gx:coord>
+          <when>2023-02-17T13:51:01Z</when>
+          <gx:coord>-1.56181072 52.38322355 133.67</gx:coord>
+          <when>2023-02-17T13:51:10Z</when>
+          <gx:coord>-1.56173014 52.38314054 134.89</gx:coord>
+          <when>2023-02-17T13:51:18Z</when>
+          <gx:coord>-1.56165341 52.38305667 139.01</gx:coord>
+          <when>2023-02-17T13:51:24Z</when>
+          <gx:coord>-1.56150995 52.38300044 139.07</gx:coord>
+          <when>2023-02-17T13:51:32Z</when>
+          <gx:coord>-1.56138625 52.38294402 138.96</gx:coord>
+          <when>2023-02-17T13:51:40Z</when>
+          <gx:coord>-1.56126449 52.38289126 138.95</gx:coord>
+          <when>2023-02-17T13:51:48Z</when>
+          <gx:coord>-1.56115751 52.38281938 138.82</gx:coord>
+          <when>2023-02-17T13:51:56Z</when>
+          <gx:coord>-1.56110544 52.38272213 138.91</gx:coord>
+          <when>2023-02-17T13:52:03Z</when>
+          <gx:coord>-1.56105386 52.38263076 137.58</gx:coord>
+          <when>2023-02-17T13:52:09Z</when>
+          <gx:coord>-1.56115216 52.38255927 138.46</gx:coord>
+          <when>2023-02-17T13:52:21Z</when>
+          <gx:coord>-1.56129237 52.38252473 136.05</gx:coord>
+          <when>2023-02-17T13:52:28Z</when>
+          <ExtendedData>
+            <SchemaData schemaUrl="#geotrackerTrackSchema">
+              <gx:SimpleArrayData name="speed">
+                <gx:value>0</gx:value>
+                <gx:value>0</gx:value>
+                <gx:value>1.06</gx:value>
+                <gx:value>0.96</gx:value>
+                <gx:value>1.02</gx:value>
+                <gx:value>0.93</gx:value>
+                <gx:value>1.02</gx:value>
+                <gx:value>1.27</gx:value>
+                <gx:value>1.22</gx:value>
+                <gx:value>1.21</gx:value>
+                <gx:value>1.18</gx:value>
+                <gx:value>1.25</gx:value>
+                <gx:value>1.28</gx:value>
+                <gx:value>1.22</gx:value>
+                <gx:value>0.79</gx:value>
+                <gx:value>0.74</gx:value>
+                <gx:value>0.88</gx:value>
+                <gx:value>1.26</gx:value>
+                <gx:value>1.24</gx:value>
+                <gx:value>1.33</gx:value>
+                <gx:value>1.34</gx:value>
+                <gx:value>1.45</gx:value>
+                <gx:value>1.47</gx:value>
+                <gx:value>1.34</gx:value>
+                <gx:value>1.25</gx:value>
+                <gx:value>1.33</gx:value>
+                <gx:value>1.26</gx:value>
+                <gx:value>1.3</gx:value>
+                <gx:value>1.35</gx:value>
+                <gx:value>1.41</gx:value>
+                <gx:value>1.38</gx:value>
+                <gx:value>1.38</gx:value>
+                <gx:value>1.35</gx:value>
+                <gx:value>1.37</gx:value>
+                <gx:value>1.43</gx:value>
+                <gx:value>1.49</gx:value>
+                <gx:value>1.49</gx:value>
+                <gx:value>1.47</gx:value>
+                <gx:value>1.39</gx:value>
+                <gx:value>1.51</gx:value>
+                <gx:value>1.4</gx:value>
+                <gx:value>1.38</gx:value>
+                <gx:value>1.34</gx:value>
+                <gx:value>1.32</gx:value>
+                <gx:value>1.34</gx:value>
+                <gx:value>1.32</gx:value>
+                <gx:value>1.46</gx:value>
+                <gx:value>1.36</gx:value>
+                <gx:value>1.36</gx:value>
+                <gx:value>1.36</gx:value>
+                <gx:value>1.35</gx:value>
+                <gx:value>1.35</gx:value>
+                <gx:value>1.36</gx:value>
+                <gx:value>1.45</gx:value>
+                <gx:value>1.37</gx:value>
+                <gx:value>1.44</gx:value>
+              </gx:SimpleArrayData>
+              <gx:SimpleArrayData name="course">
+                <gx:value />
+                <gx:value />
+                <gx:value>6.12</gx:value>
+                <gx:value>5.42</gx:value>
+                <gx:value>3.84</gx:value>
+                <gx:value>4.08</gx:value>
+                <gx:value>4.05</gx:value>
+                <gx:value>4.28</gx:value>
+                <gx:value>3.8</gx:value>
+                <gx:value>4.76</gx:value>
+                <gx:value>4.87</gx:value>
+                <gx:value>5.79</gx:value>
+                <gx:value>5.92</gx:value>
+                <gx:value>6.09</gx:value>
+                <gx:value>5.14</gx:value>
+                <gx:value>5.89</gx:value>
+                <gx:value>5.45</gx:value>
+                <gx:value>3.93</gx:value>
+                <gx:value>3.93</gx:value>
+                <gx:value>4.77</gx:value>
+                <gx:value>5.12</gx:value>
+                <gx:value>5.75</gx:value>
+                <gx:value>5.38</gx:value>
+                <gx:value>5.52</gx:value>
+                <gx:value>5.28</gx:value>
+                <gx:value>0.02</gx:value>
+                <gx:value>1.09</gx:value>
+                <gx:value>0.64</gx:value>
+                <gx:value>0.36</gx:value>
+                <gx:value>0.7</gx:value>
+                <gx:value>0.66</gx:value>
+                <gx:value>1.09</gx:value>
+                <gx:value>1.36</gx:value>
+                <gx:value>1.13</gx:value>
+                <gx:value>1.71</gx:value>
+                <gx:value>1.87</gx:value>
+                <gx:value>1.92</gx:value>
+                <gx:value>2.29</gx:value>
+                <gx:value>2.33</gx:value>
+                <gx:value>2.26</gx:value>
+                <gx:value>2.77</gx:value>
+                <gx:value>2.43</gx:value>
+                <gx:value>2.58</gx:value>
+                <gx:value>2.46</gx:value>
+                <gx:value>2.5</gx:value>
+                <gx:value>2.87</gx:value>
+                <gx:value>2.3</gx:value>
+                <gx:value>2.71</gx:value>
+                <gx:value>1.96</gx:value>
+                <gx:value>2.18</gx:value>
+                <gx:value>2.18</gx:value>
+                <gx:value>2.16</gx:value>
+                <gx:value>2.58</gx:value>
+                <gx:value>3.67</gx:value>
+                <gx:value>4.62</gx:value>
+                <gx:value>4.42</gx:value>
+              </gx:SimpleArrayData>
+            </SchemaData>
+          </ExtendedData>
+        </gx:Track>
+      </gx:MultiTrack>
+    </Placemark>
+  </Document>
+</kml>
