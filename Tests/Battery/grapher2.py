@@ -64,11 +64,19 @@ fig.suptitle('Battery charge curves')
 fmt = DateFormatter("%H:%M")
 ax10.xaxis.set_major_formatter(fmt)
 ax00.xaxis.set_major_formatter(fmt)
-# # crosshair
-# ax00.axvline(x=dt(2023,2,13,22,19,32), ymin=0, ymax=1, ls='--', c='k') 
-# ax00.axhline(y=4.183, xmin=0, xmax=1, ls='--', c='k') 
-
 # markers
+# ax00.vlines( x=[dt(2023,2,13,22,19,32), dt(2023,2,14,13,20,18)], ymin=0, ymax=1)
+# ax00.axvline(x=dt(2023,2,13,22,19,32), ymin=0, ymax=1, ls='--', c='k', zorder=-1) 
+# ax00.axvline(x= dt(2023,2,14,13,20,18), ymin=0, ymax=1, ls='--', c='k', zorder=-1) 
+# ax.text(x = dt(2023,2,13,22,19,32), y = 0, text='22:19', color='r') 
+# ax00.text(x=dt(2023,2,13,22,19,32),y=0, s="22:19", color='red')
+# ax00.text(x= dt(2023,2,13,22,19,32),  y=4.183, s="22:19", color='k', va='bottom')
+# ax00.text(dt(2023,2,14,13,20,18), y=3.564,  s="13:20", color='k', va='bottom')
 
+ax00.annotate('data', xy=(dt(2023,2,14,13,20,18), 3.564),  xycoords='data',
+              xytext=(0, 10), textcoords='offset points',
+size=12, ha='center', va="bottom",
+bbox=dict(boxstyle="round", alpha=0.1),
+arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.1))
 
 plt.show()
