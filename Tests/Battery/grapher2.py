@@ -64,19 +64,28 @@ fig.suptitle('Battery charge curves')
 fmt = DateFormatter("%H:%M")
 ax10.xaxis.set_major_formatter(fmt)
 ax00.xaxis.set_major_formatter(fmt)
-# markers
-# ax00.vlines( x=[dt(2023,2,13,22,19,32), dt(2023,2,14,13,20,18)], ymin=0, ymax=1)
-# ax00.axvline(x=dt(2023,2,13,22,19,32), ymin=0, ymax=1, ls='--', c='k', zorder=-1) 
-# ax00.axvline(x= dt(2023,2,14,13,20,18), ymin=0, ymax=1, ls='--', c='k', zorder=-1) 
-# ax.text(x = dt(2023,2,13,22,19,32), y = 0, text='22:19', color='r') 
-# ax00.text(x=dt(2023,2,13,22,19,32),y=0, s="22:19", color='red')
-# ax00.text(x= dt(2023,2,13,22,19,32),  y=4.183, s="22:19", color='k', va='bottom')
-# ax00.text(dt(2023,2,14,13,20,18), y=3.564,  s="13:20", color='k', va='bottom')
 
-ax00.annotate('data', xy=(dt(2023,2,14,13,20,18), 3.564),  xycoords='data',
-              xytext=(0, 10), textcoords='offset points',
-size=12, ha='center', va="bottom",
-bbox=dict(boxstyle="round", alpha=0.1),
-arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.1))
+# annotations
+ax00.annotate('20:18\n3.56V', xy=(dt(2023,2,14,13,20,18), 3.564),  xycoords='data',
+              xytext=(0, 20), textcoords='offset points',
+              size=12, ha='center', va="bottom",
+              bbox=dict(boxstyle="round", alpha=0.2),
+              arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
+ax00.annotate('22:19\n4.18V', xy=(dt(2023,2,13,22,19,32), 4.183),  xycoords='data',
+              xytext=(0, -20), textcoords='offset points',
+              size=12, ha='center', va="top",
+              bbox=dict(boxstyle="round", alpha=0.2),
+              arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
+
+ax10.annotate('02:27\n4.14V', xy=(dt(2023,2,15,2,27,52), 4.137),  xycoords='data',
+              xytext=(0, -20), textcoords='offset points',
+              size=12, ha='center', va="top",
+              bbox=dict(boxstyle="round", alpha=0.2),
+              arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
+ax10.annotate('16:37\n1.62V', xy=(dt(2023,2,14,16,37,39), 1.617),  xycoords='data',
+              xytext=(20, 20), textcoords='offset points',
+              size=12, ha='left', va="center",
+              bbox=dict(boxstyle="round", alpha=0.2),
+              arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
 
 plt.show()
