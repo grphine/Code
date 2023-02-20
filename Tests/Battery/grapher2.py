@@ -1,6 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from matplotlib.dates import DateFormatter
+from datetime import datetime as dt
 
 sns.set_style("whitegrid")
 
@@ -34,7 +36,7 @@ d_fix = sns.lineplot(data=df_discharge, x='Datetime', y='Fix', ax=ax01, color=bl
 legend_merge(d_level, d_fix, 0, ax00, ax01)
 ax01.fill_between(df_discharge['Datetime'], 0, df_discharge['Fix'], alpha=0.3)
 #limits
-ax00.set_ylim(2,4.25)
+ax00.set_ylim(1.5,4.5)
 ax01.set_ylim(0,2)
 ax01.set_yticks([0,1,2])
 ax00.set_title('Discharge curve')
@@ -47,7 +49,7 @@ c_fix = sns.lineplot(data=df_charge, x='Datetime', y='Fix', ax=ax11, color=blue,
 legend_merge(c_level, c_fix, 1, ax10, ax11)
 ax11.fill_between(df_charge['Datetime'], 0, df_charge['Fix'], alpha=0.3)
 #limits
-ax10.set_ylim(1,4.25)
+ax10.set_ylim(1.5,4.5)
 ax11.set_ylim(0,2)
 ax11.set_yticks([0,1,2])
 ax10.set_title('Charge curve')
@@ -55,7 +57,18 @@ ax10.set_title('Charge curve')
 #graph labels
 ax00.set_ylabel('Voltage (V)')
 ax10.set_ylabel('Voltage (V)')
+ax00.set_xlabel('Time')
+ax10.set_xlabel('Time')
 fig.suptitle('Battery charge curves')
-# plt.legend()
+# x time formatting
+fmt = DateFormatter("%H:%M")
+ax10.xaxis.set_major_formatter(fmt)
+ax00.xaxis.set_major_formatter(fmt)
+# # crosshair
+# ax00.axvline(x=dt(2023,2,13,22,19,32), ymin=0, ymax=1, ls='--', c='k') 
+# ax00.axhline(y=4.183, xmin=0, xmax=1, ls='--', c='k') 
+
+# markers
+
 
 plt.show()
