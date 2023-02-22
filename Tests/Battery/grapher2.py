@@ -54,19 +54,20 @@ ax11.set_ylim(0,2)
 ax11.set_yticks([0,1,2])
 ax10.set_title('Charge curve')
 
-#graph labels
+#figure styling
 ax00.set_ylabel('Voltage (V)')
 ax10.set_ylabel('Voltage (V)')
 ax00.set_xlabel('Time')
 ax10.set_xlabel('Time')
-fig.suptitle('Battery charge curves')
+fig.suptitle(t='Battery charge curves', ha='center', size='20')
+fig.tight_layout(pad=2.0)
 # x time formatting
 fmt = DateFormatter("%H:%M")
 ax10.xaxis.set_major_formatter(fmt)
 ax00.xaxis.set_major_formatter(fmt)
 
 # annotations
-ax00.annotate('20:18\n3.56V', xy=(dt(2023,2,14,13,20,18), 3.564),  xycoords='data',
+ax00.annotate('13:20\n3.56V', xy=(dt(2023,2,14,13,20,18), 3.564),  xycoords='data',
               xytext=(0, 20), textcoords='offset points',
               size=12, ha='center', va="bottom",
               bbox=dict(boxstyle="round", alpha=0.2),
@@ -85,6 +86,11 @@ ax10.annotate('02:27\n4.14V', xy=(dt(2023,2,15,2,27,52), 4.137),  xycoords='data
 ax10.annotate('16:37\n1.62V', xy=(dt(2023,2,14,16,37,39), 1.617),  xycoords='data',
               xytext=(20, 20), textcoords='offset points',
               size=12, ha='left', va="center",
+              bbox=dict(boxstyle="round", alpha=0.2),
+              arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
+ax10.annotate('22:11\n4.19V', xy=(dt(2023,2,14,22,11,30), 4.189),  xycoords='data',
+              xytext=(0, -20), textcoords='offset points',
+              size=12, ha='center', va="top",
               bbox=dict(boxstyle="round", alpha=0.2),
               arrowprops=dict(arrowstyle="wedge,tail_width=0.5", alpha=0.2))
 
